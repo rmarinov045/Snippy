@@ -1,0 +1,29 @@
+{
+    "name": "Snippy",
+    "version": "1.0.0",
+    "description": "Create and use premade text snippets on the web",
+    "manifest_version": 3,
+    "author": "Radostin Marinov",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Snippy"
+    },
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "background": {
+        "service-worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}

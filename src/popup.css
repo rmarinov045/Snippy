@@ -1,0 +1,66 @@
+body {
+    min-height: fit-content;
+    min-width: 15rem;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: thistle;
+}
+
+.snippet-container {
+    height: 100%;
+    width: 90%;
+    padding: 1rem;   
+    text-align: center;
+}
+
+.list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#create-btn, #save-btn {
+    padding: 10px;
+    background-color: chartreuse;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+#delete-btn {
+    padding: 10px;
+    background-color: crimson;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.snippet-creator {
+    display: none;
+    height: 100%;
+    width: 90%;
+    padding: 1rem;   
+    text-align: center;
+}
+
+.create-form {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    gap: 1rem;
+}
+
+#output-text {
+    max-width: 75%;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+}
